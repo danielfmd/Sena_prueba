@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <!--Escribir un programa en el cual se ingresen cuatro números, 
+    calcular e informar la suma de los dos primeros y el producto del tercero y el cuarto.-->
+    <script>
+      var num1, num2, num3;
+      num1 = prompt("Ingrese 1ra. num:", "");
+      num2 = prompt("Ingrese 2da. num:", "");
+      num3 = prompt("Ingrese 3ra. num:", "");
+      //Convertimos los 3 string en enteros
+      num1 = parseInt(num1);
+      num2 = parseInt(num2);
+      num3 = parseInt(num3);
+     // var pro;
+     // pro = (num1 + num2 + num3) / 3;
+      document.write("nums" +num1+" "+num2+" "+num3);
+      document.write("<br>");
+    
+      if (num1 > num2) 
+      {
+          if(num1>num3)
+          {
+            document.write("El num1 es el mayor" + num1);
+          }
+          else{
+            document.write("El num3 es el mayor" + num3);
+          }
+      }
+      else 
+      {
+        if(num2>num3)
+          {
+            document.write("El num2 es el mayor" + num2);
+          }
+          else{
+            document.write("El num3 es el mayor" + num3);
+          }
+
+      }
+    </script>
+  </body>
+</html>
